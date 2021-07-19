@@ -9,7 +9,7 @@ greencar_image = "car2.png";
 
 car_x=5;
 car_y=225;
-
+document.getElementById("myCanvas").width=screen.width()-30;
 function add() {
 	background_imageTag= new Image();
 	background_imageTag.onload=uploadBackground;
@@ -68,7 +68,7 @@ function my_keydown(e)
 function up()
 {
 	if(car_y>=0){
-		car_y=car_y-10;
+		car_y=car_y-20;
 		uploadBackground();
 		uploadgreencar();
 
@@ -78,7 +78,7 @@ function up()
 function down()
 {
 	
-		car_y=car_y+10;
+		car_y=car_y+20;
 		uploadBackground();
 		uploadgreencar();
 
@@ -86,14 +86,14 @@ function down()
 
 function left()
 {
-	car_x=car_x-10;
+	car_x=car_x-20;
 		uploadBackground();
 		uploadgreencar();
 }
 
 function right()
 {
-	car_x=car_x+10;
+	car_x=car_x+20;
 		uploadBackground();
 		uploadgreencar();
 }
